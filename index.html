@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Rock Paper Scissors GAME..</h2>
+    <div id="btn">
+        <button onclick="
+        var ranNmb = Math.random();
+        var computerMove ='';
+        if(ranNmb>=0 && ranNmb<1/3){
+            computerMove ='ROCK';
+        }
+        else if(ranNmb>=1/3 && ranNmb<2/3){
+            computerMove ='PAPER';
+        }
+        else if(ranNmb>=2/3 && ranNmb<1){
+            computerMove ='SCISSORS';
+        }
+        var result='';
+        if(computerMove === 'ROCK'){
+            result='TIE';
+        }
+        else if(computerMove === 'PAPER'){
+            result='YOU LOSE'
+        }
+        else if(computerMove === 'SCISSORS'){
+            result='YOU WIN'
+        }
+        alert(`You Picked ROCK , Computer-Picked ${computerMove} , ${result}`)
+        ">ROCK</button>
+        <button onclick="
+         var ranNmb = Math.random();
+        var computerMove ='';
+        if(ranNmb>=0 && ranNmb<1/3){
+            computerMove ='ROCK';
+        }
+        else if(ranNmb>=1/3 && ranNmb<2/3){
+            computerMove ='PAPER';
+        }
+        else if(ranNmb>=2/3 && ranNmb<1){
+            computerMove ='SCISSORS';
+        }
+        var result='';
+        if(computerMove === 'ROCK'){
+            result='YOU WIN';
+        }
+        else if(computerMove === 'PAPER'){
+            result='TIE'
+        }
+        else if(computerMove === 'SCISSORS'){
+            result='YOU LOSE'
+        }
+        alert(`You Picked PAPERS , Computer-Picked ${computerMove} , ${result}`);
+        ">PAPERS</button>
+        <button onclick="
+         var ranNmb = Math.random();
+        var computerMove ='';
+        if(ranNmb>=0 && ranNmb<1/3){
+            computerMove ='ROCK';
+        }
+        else if(ranNmb>=1/3 && ranNmb<2/3){
+            computerMove ='PAPER';
+        }
+        else if(ranNmb>=2/3 && ranNmb<1){
+            computerMove ='SCISSORS';
+        }
+        let result='';
+        if(computerMove === 'ROCK'){
+            result='YOU LOSE';
+        }
+        else if(computerMove === 'PAPER'){
+            result='YOU WIN'
+        }
+        else if(computerMove === 'SCISSORS'){
+            result='TIE'
+        }
+        alert(`You Picked SCISSORS , Computer-Picked ${computerMove} , ${result}`)
+        "
+        ">SCISSORS</button>
+    </div>
+</body>
+</html>
